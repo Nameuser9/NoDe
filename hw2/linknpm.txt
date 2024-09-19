@@ -1,0 +1,1 @@
+https://www.npmjs.com/package/abosolute_random_passwords

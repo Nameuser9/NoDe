@@ -1,0 +1,15 @@
+{
+  "name": "abosolute_random_passwords",
+  "version": "1.0.0",
+  "description": "password generating",
+  "main": "passGen.js",
+  "scripts": {
+    "start": "node hw2.js"
+  },
+  "keywords": [
+    "passworld",
+    "generation"
+  ],
+  "author": "nameuser9",
+  "license": "ISC"
+}
