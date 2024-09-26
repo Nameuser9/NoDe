@@ -1,5 +1,6 @@
 const http = require(`http`);
 let counter = 0;
+let counter_about = 0;
 const server = http.createServer((req, res) =>{
     console.log("запрос получен");
     
@@ -18,14 +19,14 @@ const server = http.createServer((req, res) =>{
         res.writeHead(200,{
             'Content-Type': 'text/html; charset=UTF-8',
         });
-        counter++; 
-        res.end('<a href="/">ссылка на не эбаут<a>');
+        counter_about++; 
+        res.end('<a href="/">ссылка на не эбаут</a><br><h1>${counter} вот столько раз переходили на эбаут</h1>');
         
     } else {
         res.writeHead(404,{
             'Content-Type': 'text/html; charset=UTF-8',
         });
-        res.end('<h1>странница не найдена<h1>');
+        res.end('<h1>странница не найдена</h1>');
 }});
 const port= 3000;
 server.listen(port,() =>{
